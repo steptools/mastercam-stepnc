@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -29,7 +29,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>false</CLRSupport>
     <UseOfAtl>false</UseOfAtl>
   </PropertyGroup>
@@ -38,7 +38,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>false</CLRSupport>
     <UseOfAtl>false</UseOfAtl>
   </PropertyGroup>
@@ -48,7 +48,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>false</CLRSupport>
     <UseOfAtl>false</UseOfAtl>
   </PropertyGroup>
@@ -58,7 +58,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CLRSupport>false</CLRSupport>
     <UseOfAtl>false</UseOfAtl>
   </PropertyGroup>
@@ -90,7 +90,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>C:\Program Files\mcamx8\chooks\</OutDir>
+    <OutDir>C:\Program Files\mcamx9\chooks\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -128,7 +128,7 @@
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
       <AdditionalLibraryDirectories>C:\Program Files (x86)\mcamx8\sdk\x64\release;C:\Program Files (x86)\mcamX8\sdk\3rdParty\BCGCBPro\libx64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>mastercam.lib;mccore.lib;UICtrls.lib;MCMill.lib;BCGCBPRO2200110.lib</AdditionalDependencies>
+      <AdditionalDependencies>mastercam.lib;mccore.lib;UICtrls.lib;MCMill.lib;BCGCBPRO2310d120.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -174,7 +174,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;MASTERCAM_AFX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\mcamx8\sdk;C:\Program Files (x86)\mcamx8\sdk\interfaces\GUI;C:\Program Files (x86)\mcamx8\sdk\interfaces\Core;C:\Program Files (x86)\mcamx8\sdk\interfaces\Control;C:\Program Files (x86)\mcamx8\sdk\interfaces\GeomSld;C:\Program Files (x86)\mcamx8\sdk\interfaces\Lathe;C:\Program Files (x86)\mcamx8\sdk\interfaces\MachineDef;C:\Program Files (x86)\mcamx8\sdk\interfaces\Matss;C:\Program Files (x86)\mcamx8\sdk\interfaces\Mill;C:\Program Files (x86)\mcamx8\sdk\interfaces\Post;C:\Program Files (x86)\mcamx8\sdk\interfaces\MSurf;C:\Program Files (x86)\mcamx8\sdk\interfaces\TlCore;C:\Program Files (x86)\mcamx8\sdk\interfaces\systypes;C:\Program Files (x86)\mcamx8\sdk\interfaces\UICtrls;C:\Program Files (x86)\mcamx8\sdk\interfaces\Verify;C:\Program Files (x86)\mcamx8\sdk\interfaces\Wire;C:\Program Files (x86)\mcamx8\sdk\interfaces\Observable;C:\Program Files (x86)\mcamx8\sdk\3rdParty\BCGCBPro\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\mcamx9\sdk;C:\Program Files (x86)\mcamx9\sdk\interfaces\GUI;C:\Program Files (x86)\mcamx9\sdk\interfaces\Core;C:\Program Files (x86)\mcamx9\sdk\interfaces\Control;C:\Program Files (x86)\mcamx9\sdk\interfaces\GeomSld;C:\Program Files (x86)\mcamx9\sdk\interfaces\Lathe;C:\Program Files (x86)\mcamx9\sdk\interfaces\MachineDef;C:\Program Files (x86)\mcamx9\sdk\interfaces\Matss;C:\Program Files (x86)\mcamx9\sdk\interfaces\Mill;C:\Program Files (x86)\mcamx9\sdk\interfaces\Post;C:\Program Files (x86)\mcamx9\sdk\interfaces\MSurf;C:\Program Files (x86)\mcamx9\sdk\interfaces\TlCore;C:\Program Files (x86)\mcamx9\sdk\interfaces\systypes;C:\Program Files (x86)\mcamx9\sdk\interfaces\UICtrls;C:\Program Files (x86)\mcamx9\sdk\interfaces\Verify;C:\Program Files (x86)\mcamx9\sdk\interfaces\Wire;C:\Program Files (x86)\mcamx9\sdk\interfaces\Observable;C:\Program Files (x86)\mcamx9\sdk\3rdParty\BCGCBPro\h;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -183,8 +183,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>C:\Program Files (x86)\mcamx8\sdk\x64\release;C:\Program Files (x86)\mcamX8\sdk\3rdParty\BCGCBPro\libx64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>mastercam.lib;mccore.lib;UICtrls.lib;MCMill.lib;BCGCBPRO2200110.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\mcamx9\sdk\x64\release;C:\Program Files (x86)\mcamx9\sdk\3rdParty\BCGCBPro\libx64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mastercam.lib;mccore.lib;UICtrls.lib;MCMill.lib;BCGCBPRO2310120.lib</AdditionalDependencies>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <NoEntryPoint>false</NoEntryPoint>
