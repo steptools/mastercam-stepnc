@@ -1,7 +1,7 @@
 mastercam-stepnc
 =======
 
-STEP-NC Export Chook for Mastercam X8
+STEP-NC Export Chook for Mastercam
 --
 
 This project build a plugin for [Mastercam](http:://www.mastercam.com)
@@ -12,8 +12,10 @@ API to create the STEP-NC data.
 ## Building
 
 This package contains a Visual Studio 2012 project file for building.
-Mastercam X8 requires x64 code, so the project only has platforms for
-"Release x64" and "Debug x64".
+Mastercam X8 and X9 requires x64 code, so the project only has platforms
+for "Release x64" and "Debug x64".   The master branch of this package
+supports the latest version of Mastercam (X9) and earlier code can be 
+found on the mcx8 branch.
 
 The package requires a Mastercam installation with the Mastercam X8
 SDK installed.  You also need the STEP-NC Machine DLL to create the
