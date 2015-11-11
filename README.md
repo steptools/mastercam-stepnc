@@ -1,4 +1,4 @@
-mcx8-stepnc
+mastercam-stepnc
 =======
 
 STEP-NC Export Chook for Mastercam X8
