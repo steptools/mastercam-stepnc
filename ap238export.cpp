@@ -27,7 +27,7 @@
 #import <mscorlib.tlb>
 #import <System.tlb>
 
-#import "c:\\Program Files (x86)\\STEP Tools\\STEP-NC Machine\\stepnc_x64.tlb" 
+#import "C:\\Program Files (x86)\\STEP Tools\\STEP-NC Machine\\stepnc_x64.tlb" 
 using namespace std;
 
 
@@ -41,18 +41,17 @@ stepnc_x64::_FeaturePtr feature;
 #define new DEBUG_NEW
 #endif
 
-#define MY_DEBUG 1
+//#define MY_DEBUG 1
 
 #ifdef MY_DEBUG
 FILE* pfLog;
 #define MY_TRACE fprintf
 #else
-void* pfLog;
-#define MY_TRACE void(0)
+#define MY_TRACE(...) void(0)
 #endif
 
 bool cc1 = true;
-bool cc3 = true;
+bool cc3 = false;
 bool use_tp_orientation = true;
 bool compound = false;	    // this flag not fully implemented
 bool pattern = false;
@@ -163,39 +162,47 @@ extern void ap238export()
 	}
 
 #ifdef MY_DEBUG
-	pfLog = fopen("c:\\Users/Hardwick/Documents/mc8_trace.txt", "w+t");
+	pfLog = fopen("C:\\mcamap238exportlog.txt", "w+t");
 #endif
 	// Initialize COM.
 	HRESULT hr = CoInitialize(NULL);
 	if (!SUCCEEDED (hr))
 	{
+#ifdef MY_DEBUG
 	    MY_TRACE(pfLog, "COM initialization failed - call STEP Tools \n");
-	    MessageBox (0, "COM initialization failed - call STEP Tools", "", MB_OK);
 	    fflush(pfLog);
+#endif
+	    MessageBox (0, "COM initialization failed - call STEP Tools", "", MB_OK);
 	    return;
 	}
 	hr = apt.CreateInstance(__uuidof(stepnc_x64::AptStepMaker));
 	if (!SUCCEEDED (hr))
 	{
+#ifdef MY_DEBUG
 	    MY_TRACE(pfLog, "APT initialization failed - call STEP Tools \n");
-	    MessageBox (0, "APT initialization failed - call STEP Tools", "", MB_OK);
 	    fflush(pfLog);
+#endif
+	    MessageBox (0, "APT initialization failed - call STEP Tools", "", MB_OK);
 	    return;
 	}
 	hr = feature.CreateInstance(__uuidof(stepnc_x64::Feature));
 	if (!SUCCEEDED (hr))
 	{
+#ifdef MY_DEBUG
 	    MY_TRACE(pfLog, "Feature initialization failed - call STEP Tools \n");
-	    MessageBox (0, "Feature initialization failed - call STEP Tools", "", MB_OK);
 	    fflush(pfLog);
+#endif
+	    MessageBox (0, "Feature initialization failed - call STEP Tools", "", MB_OK);
 	    return;
 	}
 	hr = process.CreateInstance(__uuidof(stepnc_x64::Process));
 	if (!SUCCEEDED (hr))
 	{
+#ifdef MY_DEBUG
 	    MY_TRACE(pfLog, "Process initialization failed - call STEP Tools \n");
-	    MessageBox (0, "Process initialization failed - call STEP Tools", "", MB_OK);
 	    fflush(pfLog);
+#endif
+	    MessageBox (0, "Process initialization failed - call STEP Tools", "", MB_OK);
 	    return;
 	}
 
