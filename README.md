@@ -4,7 +4,7 @@ mastercam-stepnc
 STEP-NC Export Chook for Mastercam
 --
 
-This project build a plugin for [Mastercam](http:://www.mastercam.com)
+This project build a plugin for [Mastercam](http://www.mastercam.com)
 that exports a machining program as STEP-NC.  The program uses the
 "Chooks" plugin API to access Mastercam data and the STEP-NC Machine
 API to create the STEP-NC data.   
